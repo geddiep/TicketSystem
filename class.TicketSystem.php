@@ -2,18 +2,18 @@
 
 interface TicketInterface
 {
-	CONST CSR_ADD 			= 1;
-	CONST CUSTOMER_ADD 		= 2;
-	CONST ACCOUNT_ADD 		= 3;
-	CONST TICKET_ADD 		= 4;
-	CONST STATUS_ADD		= 5;
+	CONST CSR_ADD 		= 1;
+	CONST CUSTOMER_ADD 	= 2;
+	CONST ACCOUNT_ADD 	= 3;
+	CONST TICKET_ADD 	= 4;
+	CONST STATUS_ADD	= 5;
 	CONST ATTACHMENT_ADD	= 6;
-	CONST DETAILS_ADD		= 7;
-	CONST HISTORY_ADD		= 8;
-	CONST ACTION_ADD		= 9;
-	CONST TICKET_UPDATE		= 10;
+	CONST DETAILS_ADD	= 7;
+	CONST HISTORY_ADD	= 8;
+	CONST ACTION_ADD	= 9;
+	CONST TICKET_UPDATE	= 10;
 	CONST ACCOUNT_UPDATE	= 11;
-	CONST CSR_UPDATE		= 12;
+	CONST CSR_UPDATE	= 12;
 	CONST CUSTOMER_UPDATE	= 13;
 }
 
@@ -27,39 +27,39 @@ include_once 'class.TicketSystemTicketDataModel.php';
 */
 class TicketSystem implements TicketInterface
 {
-	public $token					= "token";
-	public $db_name					= "TicketSystem";
-	public $url_API_hostname		= "hostname";
-	public $url_api					= "api/";
-	public $url_version				= "v1/";
-	public $url_account_id			= "16064/"; //account
-	public $url_dept_id				= "16072/"; //department
-	public $url_assigned_to			= "_Assigned_To_=";
-	public $url_object_type			= '';
-	public $url_page_size			= "_pageSize_=";
-	public $url_start_page			= "_startPage_=";
-	public $url_total				= "_total_=true";  //only shows the totals for the respective call
-	public $url_schema				= "schema/";
-	public $url_status				= "status/";
-	public $url_upload				= "upload/";
-	public $url_ticket				= "Ticket/";
-	public $url_action				= "action/";
-	public $url_view				= "view/";
-	public $url_date_updated		= "Date_Updated=";
-	public $url_token				= "_token_=";
-	public $url_history				= "_history_=true";
-	public $media_location			= '/www/media/TicketSystem/';
+	public $token			= "token";
+	public $db_name			= "TicketSystem";
+	public $url_API_hostname	= "hostname";
+	public $url_api			= "api/";
+	public $url_version		= "v1/";
+	public $url_account_id		= "16064/"; //account
+	public $url_dept_id		= "16072/"; //department
+	public $url_assigned_to		= "_Assigned_To_=";
+	public $url_object_type		= '';
+	public $url_page_size		= "_pageSize_=";
+	public $url_start_page		= "_startPage_=";
+	public $url_total		= "_total_=true";  //only shows the totals for the respective call
+	public $url_schema		= "schema/";
+	public $url_status		= "status/";
+	public $url_upload		= "upload/";
+	public $url_ticket		= "Ticket/";
+	public $url_action		= "action/";
+	public $url_view		= "view/";
+	public $url_date_updated	= "Date_Updated=";
+	public $url_token		= "_token_=";
+	public $url_history		= "_history_=true";
+	public $media_location		= '/www/media/TicketSystem/';
 	public $attachment_ftp_connect	= null;
-	public $login_ftp				= null;
-	public $insert_records			= 0;
-	public $url_action_id			= 0;
-	public $url_status_id			= 0;
-	public $total_ticket_calls		= 0;
-	public $url_object_id			= 0;
-	public $url_csr_id				= 0;
-	public $ticket_num				= 0;
-	public $page_num				= 0;
-	public $page_size				= 0;
+	public $login_ftp		= null;
+	public $insert_records		= 0;
+	public $url_action_id		= 0;
+	public $url_status_id		= 0;
+	public $total_ticket_calls	= 0;
+	public $url_object_id		= 0;
+	public $url_csr_id		= 0;
+	public $ticket_num		= 0;
+	public $page_num		= 0;
+	public $page_size		= 0;
 	public $total_csr_records_added = 0;
 	
 	/*
